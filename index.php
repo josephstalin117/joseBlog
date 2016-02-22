@@ -22,7 +22,7 @@ get('/index', function () {
     render('main', array(
         'page' => $page,
         'posts' => $posts,
-        'has_paginagtiong' => has_paginationg($page)
+        'has_paginagtiong' => has_pagination($page)
     ));
 });
 
