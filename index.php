@@ -22,7 +22,7 @@ get('/index', function () {
     render('main', array(
         'page' => $page,
         'posts' => $posts,
-        'has_paginagtiong' => has_pagination($page)
+        'has_pagination' => has_pagination($page)
     ));
 });
 
@@ -35,7 +35,7 @@ get('/:year/:month/:name', function ($year, $month, $name) {
     }
 
     render('post', array(
-        'titile' => $post->titile . '.' . config('blog.title'),
+        'title' => $post->title . '.' . config('blog.title'),
         'p' => $post
     ));
 
@@ -64,9 +64,4 @@ get('.*',function(){
    not_found();
 });
 
-
 dispatch();
-
-
-
-
