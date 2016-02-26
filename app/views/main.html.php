@@ -1,17 +1,11 @@
-<?php foreach ($posts as $p): ?>
-    <div class="post"></div>
-    <h2><a href="<?php echo $p->url ?>"><?php echo $p->title ?></a></h2>
+<div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">Blog</div>
+    <!-- List group -->
 
-    <div class="date"><?php echo date('d F Y', $p->date) ?></div>
-
-    <?php echo $p->body ?>
-
-<?php endforeach ?>
-
-<?php if ($has_pagination['prev']): ?>
-    <a href="?page=<?php echo $page-1?>" class="pagination-arrow newer">Newer</a>
-<?php endif; ?>
-
-<?php if ($has_pagination['next']):?>
-    <a href="?page=<?php echo $page+1?>" class="pagination-arrow older">Older</a>
-<?php endif;?>
+    <ul class="list-group">
+        <?php foreach ($posts as $p): ?>
+            <li class="list-group-item"><a href="<?php echo $p->url ?>"><?php echo $p->title ?></a></li>
+        <?php endforeach ?>
+    </ul>
+</div>
