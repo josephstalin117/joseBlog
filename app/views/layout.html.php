@@ -5,7 +5,7 @@
 
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" user-scalable="no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <meta name="description" content="<?php echo config('blog.description') ?>"/>
 
     <link rel="alternate" type="application/rss+xml" title="<?php echo config('blog.title') ?>  Feed"
@@ -17,18 +17,8 @@
 
     <script src="<?php echo site_url() ?>assets/js/jquery-1.12.1.min.js"></script>
     <script src="<?php echo site_url() ?>assets/js/bootstrap.js"></script>
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
 </head>
 <body>
-<!--    <p class="description">--><?php //echo config('blog.description') ?><!--</p>-->
-<!---->
-<!--    <ul>-->
-<!--        <li><a href="--><?php //echo site_url() ?><!--">Home</a></li>-->
-<!--        <li><a href="">Contanct me</a></li>-->
-<!--    </ul>-->
-<!--    <p class="author">--><?php //echo config('blog.authorbio') ?><!--</p>-->
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
